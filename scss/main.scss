@@ -1,0 +1,72 @@
+$spacing:8px;
+$spacing2:8px;
+//Operaciones
+div{
+    padding: $spacing*2;
+}
+//Condicional
+$animal:perro;
+div{
+    @if $animal == pato{
+        color: blue;
+    } @else if $animal != pato{
+        color: black;
+    }
+}
+//Bucles to o through
+@for $i from 1 through 6 {
+    //Interpolaciones 
+    .clase#{$i} {
+        font-size:24em / $i;
+    }
+}
+//Each
+$lista-colores:red,blue,green,yellow;
+@each $color in $lista-colores {
+    .color-#{$color}{
+        background-color: $color;
+    }
+}
+//Maps
+$redes: (
+    twitter: #330be0,
+    facebook:#0026ab,
+    instagram:#c000f6,
+    );
+    @each $red, $color in $redes{
+        .red-#{$red}{
+            color: $color;
+        }
+    }
+    //Extend
+    .boton{
+        border: solid 2px #bb923b;
+        padding:8px 16px;
+        margin: 8px;
+    }
+    .boton-primario{
+        @extend .boton;
+        background-color: #0026ab;
+        border-color: #0026ab;
+      
+    }
+    // Mixins
+    // @mixin size($alto,$ancho,$margin){
+    //     height: $alto;
+    //     width: $ancho;
+    //     margin: $margin; 
+
+    // }
+    // div{
+    //     @include size(8px,16px,24px)
+    // }
+    @mixin size{
+        height: 8px;
+        width: 8px;
+        margin: 24px; 
+
+    }
+    div{
+        @include size;
+        padding: auto;
+    }

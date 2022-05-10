@@ -1,0 +1,59 @@
+div {
+  padding: 16px; }
+
+div {
+  color: black; }
+
+.clase1 {
+  font-size: 24em; }
+
+.clase2 {
+  font-size: 12em; }
+
+.clase3 {
+  font-size: 8em; }
+
+.clase4 {
+  font-size: 6em; }
+
+.clase5 {
+  font-size: 4.8em; }
+
+.clase6 {
+  font-size: 4em; }
+
+.color-red {
+  background-color: red; }
+
+.color-blue {
+  background-color: blue; }
+
+.color-green {
+  background-color: green; }
+
+.color-yellow {
+  background-color: yellow; }
+
+.red-twitter {
+  color: #330be0; }
+
+.red-facebook {
+  color: #0026ab; }
+
+.red-instagram {
+  color: #c000f6; }
+
+.boton, .boton-primario {
+  border: solid 2px #bb923b;
+  padding: 8px 16px;
+  margin: 8px; }
+
+.boton-primario {
+  background-color: #0026ab;
+  border-color: #0026ab; }
+
+div {
+  height: 8px;
+  width: 8px;
+  margin: 24px;
+  padding: auto; }
